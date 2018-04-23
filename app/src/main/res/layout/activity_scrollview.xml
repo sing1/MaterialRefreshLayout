@@ -70,32 +70,6 @@
                 android:onClick="onClick"
                 android:text="autoFresh"
                 android:textColor="#fff"/>
-
-            <Button
-                android:id="@+id/sun"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:background="#ff2020"
-                android:onClick="onClick"
-                android:text="sun"
-                android:textColor="#fff"/>
-
-            <Button
-                android:id="@+id/overLay"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="10dp"
-                android:background="#ff2020"
-                android:onClick="onClick"
-                android:text="overLay"
-                android:textColor="#fff"/>
-
-
         </LinearLayout>
     </ScrollView>
 </sing.MaterialRefreshLayout>
