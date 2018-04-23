@@ -21,6 +21,10 @@ public class ScrollViewActivity extends BaseActivity implements View.OnClickList
         materialRefreshLayout = (MaterialRefreshLayout) findViewById(R.id.refresh);
         materialRefreshLayout.setMaterialRefreshListener(new MaterialRefreshListener() {
             @Override
+            public void onRefreshLoadMore(MaterialRefreshLayout materialRefreshLayout) {
+            }
+
+            @Override
             public void onRefresh(final MaterialRefreshLayout materialRefreshLayout) {
                 materialRefreshLayout.postDelayed(new Runnable() {
                     @Override

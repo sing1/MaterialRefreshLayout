@@ -22,7 +22,7 @@ public class AutoRefreshActivity extends BaseActivity {
         }
 
         final ListView listView = (ListView) findViewById(R.id.lv);
-        listView.setAdapter(new android.widget.ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, array));
+        listView.setAdapter(new android.widget.ArrayAdapter<>(this, android.R.layout.simple_list_item_1, array));
         materialRefreshLayout = (MaterialRefreshLayout) findViewById(R.id.refresh);
         materialRefreshLayout.setLoadMore(true);
         materialRefreshLayout.finishRefreshLoadMore();
