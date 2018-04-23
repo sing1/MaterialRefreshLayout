@@ -37,8 +37,6 @@ public class LoadMoreActivity extends BaseActivity {
                         materialRefreshLayout.finishRefresh();
                     }
                 }, 3000);
-
-
             }
 
             @Override
@@ -65,7 +63,7 @@ public class LoadMoreActivity extends BaseActivity {
     }
 
     private void setupRecyclerView() {
-        RecyclerView rv = findViewById(R.id.recyclerview);
+        RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerview);
         rv.setLayoutManager(new LinearLayoutManager(rv.getContext()));
         rv.setAdapter(new SimpleStringRecyclerViewAdapter(LoadMoreActivity.this));
         rv.setItemAnimator(new DefaultItemAnimator());

@@ -55,12 +55,6 @@ public class ScrollViewActivity extends BaseActivity implements View.OnClickList
                 Intent intent2 = new Intent(this, AutoRefreshActivity.class);
                 startActivity(intent2);
                 break;
-            case R.id.sun:
-                startActivity(new Intent(this, SunActivity.class));
-                break;
-            case R.id.overLay:
-                startActivity(new Intent(this, OverLayActivity.class));
-                break;
         }
     }
 }
