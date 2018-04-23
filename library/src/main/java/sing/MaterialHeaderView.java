@@ -8,7 +8,6 @@ import android.widget.FrameLayout;
 
 public class MaterialHeaderView extends FrameLayout implements MaterialHeadListener {
 
-    private final static String Tag = MaterialHeaderView.class.getSimpleName();
     private MaterialWaveView materialWaveView;
     private CircleProgressBar circleProgressBar;
     private int waveColor;
@@ -34,7 +33,6 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }
-
 
     protected void init(AttributeSet attrs, int defStyle) {
         if (isInEditMode()) return;
@@ -97,7 +95,6 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
                 }
             }
         });
-
     }
 
     public void setProgressValueMax(int value) {
@@ -151,7 +148,6 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
             ViewCompat.setScaleX(circleProgressBar, 0);
             ViewCompat.setScaleY(circleProgressBar, 0);
         }
-
     }
 
     @Override
@@ -182,7 +178,6 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
 
     @Override
     public void onRelease(MaterialRefreshLayout materialRefreshLayout, float fraction) {
-
     }
 
     @Override
@@ -194,5 +189,4 @@ public class MaterialHeaderView extends FrameLayout implements MaterialHeadListe
             circleProgressBar.onRefreshing(materialRefreshLayout);
         }
     }
-
 }

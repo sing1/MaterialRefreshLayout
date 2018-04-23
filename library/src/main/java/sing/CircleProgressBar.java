@@ -1,19 +1,3 @@
-/*
- * Copyright (C) 2014 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *      http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package sing;
 
 import android.annotation.SuppressLint;
@@ -78,13 +62,11 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
     public CircleProgressBar(Context context) {
         super(context);
         init(context, null, 0);
-
     }
 
     public CircleProgressBar(Context context, AttributeSet attrs) {
         super(context, attrs);
         init(context, attrs, 0);
-
     }
 
     public CircleProgressBar(Context context, AttributeSet attrs, int defStyleAttr) {
@@ -94,31 +76,22 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
 
 
     private void init(Context context, AttributeSet attrs, int defStyleAttr) {
-        final TypedArray a = context.obtainStyledAttributes(
-                attrs, R.styleable.CircleProgressBar, defStyleAttr, 0);
+        final TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.CircleProgressBar, defStyleAttr, 0);
 
         final float density = getContext().getResources().getDisplayMetrics().density;
 
-        mBackGroundColor = a.getColor(
-                R.styleable.CircleProgressBar_mlpb_background_color, DEFAULT_CIRCLE_BG_LIGHT);
+        mBackGroundColor = a.getColor(R.styleable.CircleProgressBar_mlpb_background_color, DEFAULT_CIRCLE_BG_LIGHT);
 
-        mProgressColor = a.getColor(
-                R.styleable.CircleProgressBar_mlpb_progress_color, DEFAULT_CIRCLE_BG_LIGHT);
+        mProgressColor = a.getColor(R.styleable.CircleProgressBar_mlpb_progress_color, DEFAULT_CIRCLE_BG_LIGHT);
         mColors = new int[]{mProgressColor};
 
-        mInnerRadius = a.getDimensionPixelOffset(
-                R.styleable.CircleProgressBar_mlpb_inner_radius, -1);
+        mInnerRadius = a.getDimensionPixelOffset(R.styleable.CircleProgressBar_mlpb_inner_radius, -1);
 
-        mProgressStokeWidth = a.getDimensionPixelOffset(
-                R.styleable.CircleProgressBar_mlpb_progress_stoke_width, (int) (STROKE_WIDTH_LARGE * density));
-        mArrowWidth = a.getDimensionPixelOffset(
-                R.styleable.CircleProgressBar_mlpb_arrow_width, -1);
-        mArrowHeight = a.getDimensionPixelOffset(
-                R.styleable.CircleProgressBar_mlpb_arrow_height, -1);
-        mTextSize = a.getDimensionPixelOffset(
-                R.styleable.CircleProgressBar_mlpb_progress_text_size, (int) (DEFAULT_TEXT_SIZE * density));
-        mTextColor = a.getColor(
-                R.styleable.CircleProgressBar_mlpb_progress_text_color, Color.BLACK);
+        mProgressStokeWidth = a.getDimensionPixelOffset(R.styleable.CircleProgressBar_mlpb_progress_stoke_width, (int) (STROKE_WIDTH_LARGE * density));
+        mArrowWidth = a.getDimensionPixelOffset(R.styleable.CircleProgressBar_mlpb_arrow_width, -1);
+        mArrowHeight = a.getDimensionPixelOffset(R.styleable.CircleProgressBar_mlpb_arrow_height, -1);
+        mTextSize = a.getDimensionPixelOffset(R.styleable.CircleProgressBar_mlpb_progress_text_size, (int) (DEFAULT_TEXT_SIZE * density));
+        mTextColor = a.getColor(R.styleable.CircleProgressBar_mlpb_progress_text_color, Color.BLACK);
 
         mShowArrow = a.getBoolean(R.styleable.CircleProgressBar_mlpb_show_arrow, false);
         mCircleBackgroundEnabled = a.getBoolean(R.styleable.CircleProgressBar_mlpb_enable_circle_background, true);
@@ -159,8 +132,7 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         if (!elevationSupported()) {
-            setMeasuredDimension(getMeasuredWidth() + mShadowRadius * 2, getMeasuredHeight()
-                    + mShadowRadius * 2);
+            setMeasuredDimension(getMeasuredWidth() + mShadowRadius * 2, getMeasuredHeight() + mShadowRadius * 2);
         }
     }
 
@@ -194,8 +166,7 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
                 OvalShape oval = new OvalShadow(mShadowRadius, mDiameter - mShadowRadius * 2);
                 mBgCircle = new ShapeDrawable(oval);
                 ViewCompat.setLayerType(this, ViewCompat.LAYER_TYPE_SOFTWARE, mBgCircle.getPaint());
-                mBgCircle.getPaint().setShadowLayer(mShadowRadius, shadowXOffset, shadowYOffset,
-                        KEY_SHADOW_COLOR);
+                mBgCircle.getPaint().setShadowLayer(mShadowRadius, shadowXOffset, shadowYOffset, KEY_SHADOW_COLOR);
                 final int padding = (int) mShadowRadius;
                 // set padding so the inner image sits correctly within the shadow.
                 setPadding(padding, padding, padding, padding);
@@ -346,7 +317,7 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
             mProgress = progress;
         }
         invalidate();
-        Log.i("cjj_log", "progress------->>>>" + progress);
+        Log.i("refreshlayout", "progress-->" + progress);
     }
 
 
@@ -414,13 +385,11 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
 
     @Override
     public void onPull(MaterialRefreshLayout materialRefreshLayout, float fraction) {
-
         mProgressDrawable.setProgressRotation(fraction);
     }
 
     @Override
     public void onRelease(MaterialRefreshLayout materialRefreshLayout, float fraction) {
-
     }
 
     @Override
@@ -429,7 +398,6 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
             mProgressDrawable.start();
         }
     }
-
 
     private class OvalShadow extends OvalShape {
         private RadialGradient mRadialGradient;
@@ -442,10 +410,13 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
             mShadowPaint = new Paint();
             mShadowRadius = shadowRadius;
             mCircleDiameter = circleDiameter;
-            mRadialGradient = new RadialGradient(mCircleDiameter / 2, mCircleDiameter / 2,
-                    mShadowRadius, new int[]{
-                    FILL_SHADOW_COLOR, Color.TRANSPARENT
-            }, null, Shader.TileMode.CLAMP);
+            mRadialGradient = new RadialGradient(
+                    mCircleDiameter / 2,
+                    mCircleDiameter / 2,
+                    mShadowRadius,
+                    new int[]{FILL_SHADOW_COLOR, Color.TRANSPARENT},
+                    null,
+                    Shader.TileMode.CLAMP);
             mShadowPaint.setShader(mRadialGradient);
         }
 
@@ -453,8 +424,7 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
         public void draw(Canvas canvas, Paint paint) {
             final int viewWidth = CircleProgressBar.this.getWidth();
             final int viewHeight = CircleProgressBar.this.getHeight();
-            canvas.drawCircle(viewWidth / 2, viewHeight / 2, (mCircleDiameter / 2 + mShadowRadius),
-                    mShadowPaint);
+            canvas.drawCircle(viewWidth / 2, viewHeight / 2, (mCircleDiameter / 2 + mShadowRadius), mShadowPaint);
             canvas.drawCircle(viewWidth / 2, viewHeight / 2, (mCircleDiameter / 2), paint);
         }
     }

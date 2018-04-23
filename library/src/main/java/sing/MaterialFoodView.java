@@ -20,7 +20,6 @@ public class MaterialFoodView extends FrameLayout implements MaterialHeadListene
     private int progressSize;
     private MaterialHeadListener listener;
 
-
     public MaterialFoodView(Context context) {
         this(context, null);
     }
@@ -33,7 +32,6 @@ public class MaterialFoodView extends FrameLayout implements MaterialHeadListene
         super(context, attrs, defStyle);
         init(attrs, defStyle);
     }
-
 
     protected void init(AttributeSet attrs, int defStyle) {
         if (isInEditMode()) return;
@@ -86,7 +84,6 @@ public class MaterialFoodView extends FrameLayout implements MaterialHeadListene
                 }
             }
         });
-
     }
 
     public void setProgressValueMax(int value) {
@@ -135,8 +132,6 @@ public class MaterialFoodView extends FrameLayout implements MaterialHeadListene
             ViewCompat.setScaleX(circleProgressBar, 0);
             ViewCompat.setScaleY(circleProgressBar, 0);
         }
-
-
     }
 
     @Override
@@ -167,7 +162,6 @@ public class MaterialFoodView extends FrameLayout implements MaterialHeadListene
 
     @Override
     public void onRelease(MaterialRefreshLayout materialRefreshLayout, float fraction) {
-
     }
 
     @Override
@@ -179,7 +173,4 @@ public class MaterialFoodView extends FrameLayout implements MaterialHeadListene
             circleProgressBar.onRefreshing(materialRefreshLayout);
         }
     }
-
 }
-
-

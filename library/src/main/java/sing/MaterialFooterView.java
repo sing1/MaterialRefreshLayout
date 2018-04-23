@@ -33,7 +33,6 @@ public class MaterialFooterView extends FrameLayout implements MaterialHeadListe
         init(attrs, defStyle);
     }
 
-
     protected void init(AttributeSet attrs, int defStyle) {
         if (isInEditMode()) return;
         setClipToPadding(false);
@@ -91,7 +90,6 @@ public class MaterialFooterView extends FrameLayout implements MaterialHeadListe
                 }
             }
         });
-
     }
 
     public void setProgressValueMax(int value) {
@@ -147,8 +145,6 @@ public class MaterialFooterView extends FrameLayout implements MaterialHeadListe
             ViewCompat.setScaleX(circleProgressBar, 0);
             ViewCompat.setScaleY(circleProgressBar, 0);
         }
-
-
     }
 
     @Override
@@ -179,7 +175,6 @@ public class MaterialFooterView extends FrameLayout implements MaterialHeadListe
 
     @Override
     public void onRelease(MaterialRefreshLayout materialRefreshLayout, float fraction) {
-
     }
 
     @Override
@@ -191,7 +186,4 @@ public class MaterialFooterView extends FrameLayout implements MaterialHeadListe
             circleProgressBar.onRefreshing(materialRefreshLayout);
         }
     }
-
 }
-
-
