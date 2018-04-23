@@ -91,7 +91,6 @@ public class MaterialWaveView extends View implements MaterialHeadListener {
         canvas.drawPath(path, paint);
     }
 
-
     @Override
     public void onComlete(MaterialRefreshLayout br) {
         waveHeight = 0;

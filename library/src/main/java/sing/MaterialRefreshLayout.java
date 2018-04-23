@@ -173,7 +173,6 @@ public class MaterialRefreshLayout extends FrameLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
-        if (isRefreshing) return true;
         switch (ev.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 mTouchY = ev.getY();
@@ -211,10 +210,6 @@ public class MaterialRefreshLayout extends FrameLayout {
 
     @Override
     public boolean onTouchEvent(MotionEvent e) {
-        if (isRefreshing) {
-            return super.onTouchEvent(e);
-        }
-
         switch (e.getAction()) {
             case MotionEvent.ACTION_MOVE:
                 mCurrentY = e.getY();
@@ -352,8 +347,7 @@ public class MaterialRefreshLayout extends FrameLayout {
     }
 
     /**
-     * @return Whether it is possible for the child view of this layout to
-     * scroll up. Override this if the child view is a custom view.
+     * @return Whether it is possible for the child view of this layout to scroll up. Override this if the child view is a custom view.
      */
     public boolean canChildScrollUp() {
         if (mChildView == null) {

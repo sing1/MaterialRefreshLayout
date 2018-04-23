@@ -172,7 +172,7 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
                 setPadding(padding, padding, padding, padding);
             }
             mBgCircle.getPaint().setColor(mBackGroundColor);
-            setBackgroundDrawable(mBgCircle);
+            setBackground(mBgCircle);
         }
         mProgressDrawable.setBackgroundColor(mBackGroundColor);
         mProgressDrawable.setColorSchemeColors(mColors);
@@ -209,7 +209,6 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
     final public void setImageResource(int resId) {
 
     }
-
 
     public boolean isShowArrow() {
         return mShowArrow;
@@ -320,7 +319,6 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
         Log.i("refreshlayout", "progress-->" + progress);
     }
 
-
     public boolean circleBackgroundEnabled() {
         return mCircleBackgroundEnabled;
     }
@@ -338,17 +336,6 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
     @Override
     public void setVisibility(int visibility) {
         super.setVisibility(visibility);
-//        if (mProgressDrawable != null) {
-//            mProgressDrawable.setVisible(visibility == VISIBLE, false);
-//            if (visibility != VISIBLE) {
-//                mProgressDrawable.stop();
-//            } else {
-//                if (mProgressDrawable.isRunning()) {
-//                    mProgressDrawable.stop();
-//                }
-//                mProgressDrawable.start();
-//            }
-//        }
     }
 
     @Override
@@ -380,7 +367,6 @@ public class CircleProgressBar extends ImageView implements MaterialHeadListener
     @Override
     public void onBegin(MaterialRefreshLayout materialRefreshLayout) {
         setVisibility(View.VISIBLE);
-//        mProgressDrawable.setStartEndTrim(0, (float) 0.75);
     }
 
     @Override
