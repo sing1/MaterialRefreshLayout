@@ -53,7 +53,7 @@ materialRefreshLayout.finishRefreshLoadMore();
 #### 1、侵入式下拉
 在xml中, 设置以下属性
 
-![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/01.png)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_01.jpg)
 
 ```XML
 <sing.MaterialRefreshLayout
@@ -73,7 +73,7 @@ materialRefreshLayout.setWaveShow(false);
 ```
 #### 2、非侵入下拉刷新
 
-![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/02.png)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_02.jpg)
 
 在xml中, 设置以下属性
 
@@ -95,7 +95,7 @@ materialRefreshLayout.setWaveShow(false);
 ```
 #### 3、侵入式+波浪背景
 
-![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/03.png)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_03.jpg)
 
 在xml中, 设置以下属性
 
@@ -121,7 +121,7 @@ materialRefreshLayout.setWaveShow(true);
 ```
 #### 4、非侵入式+波浪背景
 
-![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/04.png)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_04.jpg)
 
 在xml中, 设置以下属性
 
@@ -146,7 +146,7 @@ materialRefreshLayout.setWaveShow(true);
 ```
 #### 5、加载更多
 
-![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/05.png)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_05.jpg)
 
 在xml中, 设置以下属性
 
