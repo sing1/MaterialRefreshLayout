@@ -2,7 +2,7 @@
 
 ---------------------------------------------------------------------------
 
-[原文地址](https://github.com/android-cjj/Android-MaterialRefreshLayout)
+[原文地址](https://github.com/android-cjj/Android-MaterialRefreshLayout)  
 本文是转载，原文的不少BUG也也无人维护，作者推荐将`library`下载本地自己改，但为了不每次都拷贝，故自己维护使用。
 
 ### 用法
@@ -53,7 +53,7 @@ materialRefreshLayout.finishRefreshLoadMore();
 #### 1、侵入式下拉
 在xml中, 设置以下属性
 
-![](https://github.com/Sing1/MaterialRefreshLayout/blob/master/app/src/main/res/mipmap-xhdpi/01.png)
+![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/01.png)
 
 ```XML
 <sing.MaterialRefreshLayout
@@ -73,7 +73,7 @@ materialRefreshLayout.setWaveShow(false);
 ```
 #### 2、非侵入下拉刷新
 
-![](https://github.com/Sing1/MaterialRefreshLayout/blob/master/app/src/main/res/mipmap-xhdpi/02.png)
+![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/02.png)
 
 在xml中, 设置以下属性
 
@@ -95,7 +95,7 @@ materialRefreshLayout.setWaveShow(false);
 ```
 #### 3、侵入式+波浪背景
 
-![](https://github.com/Sing1/MaterialRefreshLayout/blob/master/app/src/main/res/mipmap-xhdpi/03.png)
+![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/03.png)
 
 在xml中, 设置以下属性
 
@@ -121,7 +121,7 @@ materialRefreshLayout.setWaveShow(true);
 ```
 #### 4、非侵入式+波浪背景
 
-![](https://github.com/Sing1/MaterialRefreshLayout/blob/master/app/src/main/res/mipmap-xhdpi/04.png)
+![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/04.png)
 
 在xml中, 设置以下属性
 
@@ -146,7 +146,7 @@ materialRefreshLayout.setWaveShow(true);
 ```
 #### 5、加载更多
 
-![](https://github.com/Sing1/MaterialRefreshLayout/blob/master/app/src/main/res/mipmap-xhdpi/05.png)
+![](https://github.com/Sing1/MaterialRefreshLayout/tree/master/app/src/main/res/mipmap-xhdpi/05.png)
 
 在xml中, 设置以下属性
 
