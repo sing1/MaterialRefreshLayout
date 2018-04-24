@@ -53,7 +53,7 @@ materialRefreshLayout.finishRefreshLoadMore();
 #### 1、侵入式下拉
 在xml中, 设置以下属性
 
-![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_01.jpg?imageView2/2/w/400/h/300/q/75|imageslim)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_01.jpg?imageView2/2/w/400/h/300/q/100|imageslim)
 
 ```XML
 <sing.MaterialRefreshLayout
@@ -73,7 +73,7 @@ materialRefreshLayout.setWaveShow(false);
 ```
 #### 2、非侵入下拉刷新
 
-![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_02.jpg?imageView2/2/w/400/h/300/q/75|imageslim)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_02.jpg?imageView2/2/w/400/h/300/q/100|imageslim)
 
 在xml中, 设置以下属性
 
@@ -95,7 +95,7 @@ materialRefreshLayout.setWaveShow(false);
 ```
 #### 3、侵入式+波浪背景
 
-![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_03.jpg?imageView2/2/w/400/h/300/q/75|imageslim)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_03.jpg?imageView2/2/w/400/h/300/q/100|imageslim)
 
 在xml中, 设置以下属性
 
@@ -121,7 +121,7 @@ materialRefreshLayout.setWaveShow(true);
 ```
 #### 4、非侵入式+波浪背景
 
-![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_04.jpg?imageView2/2/w/400/h/300/q/75|imageslim)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_04.jpg?imageView2/2/w/400/h/300/q/100|imageslim)
 
 在xml中, 设置以下属性
 
@@ -146,7 +146,7 @@ materialRefreshLayout.setWaveShow(true);
 ```
 #### 5、加载更多
 
-![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_05.jpg?imageView2/2/w/400/h/300/q/75|imageslim)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_05.jpg?imageView2/2/w/400/h/300/q/100|imageslim)
 
 在xml中, 设置以下属性
 
