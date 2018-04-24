@@ -53,7 +53,8 @@ materialRefreshLayout.finishRefreshLoadMore();
 #### 1、侵入式下拉
 在xml中, 设置以下属性
 
-![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_01.jpg)
+![](http://oupjofqw3.bkt.clouddn.com/material_refresh_layout_01.jpg?	
+imageView2/1/w/720/h/600/format/jpg/q/75)
 
 ```XML
 <sing.MaterialRefreshLayout
