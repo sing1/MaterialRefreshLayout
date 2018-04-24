@@ -121,7 +121,6 @@ public class MaterialRefreshLayout extends FrameLayout {
         t.recycle();
     }
 
-
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
